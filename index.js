@@ -1,6 +1,10 @@
 produceDrivingRange(range){
-  //function streetToInt(street){
   return function(street1, street2){
-    const distance=
+    const difference=range-Math.abs(parseInt(street1)- parseInt(street2))
+    if (difference>=0){
+      return `within range by ${difference}`
+    }else{
+      return `${-difference} blocks out of range`
+    }
   }
 }
