@@ -19,14 +19,9 @@ function createDriver() {
   let driverId = 0;
   // return the class
   return class {
-    constructor(name, manufacturePrice) {
+    constructor(name) {
       this.name = name;
-      this.manufacturePrice = manufacturePrice;
-      this.id = ++ItemId;
-    }
- 
-    retailPrice(marketMultiplier) {
-      return marketMultiplier * this.manufacturePrice;
+      this.id = ++driverId;
     }
   };
 }
