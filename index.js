@@ -9,4 +9,6 @@ function produceDrivingRange(range){
   }
 }
 
-function
+function produceTipCalculator(percent){
+  return function()
+}
